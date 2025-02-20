@@ -1,0 +1,9 @@
+---
+
+- name: "Mi play"
+  hosts: all
+
+  tasks:
+    - name: Prueba
+      debug:
+        msg: "Hola"
