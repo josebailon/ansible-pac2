@@ -1,9 +1,8 @@
 ---
-
-- name: "Mi play"
-  hosts: all
+- name: "Proceso fichero"
+  hosts: webservers
 
   tasks:
-    - name: Prueba
-      debug:
-        msg: "Hola"
+    - name: "Crear fichero"
+      shell:
+        touch /tmp/awx_test.txt
